@@ -103,6 +103,9 @@ describe('10 - Implemente os casos de teste e a função `createMenu`', () => {
     // --------------------------------------------------------------------------------------
 
     // TESTE 6: Verifique se, ao adicionar três pedidos, dentre bebidas e comidas, o array `objetoRetornado.consumption` contém os itens pedidos.
+    expect(createMenu(menu).order('agua').consumption).toEqual(['coxinha', 'agua']);
+    expect(createMenu(menu).order('sopa').consumption).toEqual(['coxinha', 'agua', 'sopa']);
+    expect(createMenu(menu).order('sashimi').consumption).toEqual(['coxinha', 'agua', 'sopa', 'sashimi']);
     // ```
     // objetoRetornado.order("coxinha");
     // objetoRetornado.order("agua");

@@ -118,6 +118,7 @@ describe('10 - Implemente os casos de teste e a função `createMenu`', () => {
     // --------------------------------------------------------------------------------------
 
     // TESTE 7: Verifique se a função `order` aceita que pedidos repetidos sejam acrescidos a `consumption`.
+    expect(createMenu(menu).order('coxinha').consumption).toEqual(['coxinha', 'agua', 'sopa', 'sashimi', 'coxinha']);
     // ```
     // objetoRetornado.order('coxinha');
     // objetoRetornado.order('agua');
